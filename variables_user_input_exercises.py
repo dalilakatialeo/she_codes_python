@@ -11,7 +11,7 @@ print(float(num1) + float(num2))
 
 
 # Q2
-#take two numbers from user, output the multiplication equation!
+# take two numbers from user, output the multiplication equation!
 
 num3 = input("Enter a number: ")
 num4 = input("Enter another number: ")
