@@ -5,3 +5,4 @@ mailing_list = [
     ["Prince Thomas of Whitepaw", "hrh.thomas@royalty.wp"],
     ["Ivy", "noreply@goldendreamers.xyz"],
 ]
+

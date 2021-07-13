@@ -10,3 +10,10 @@ foods = [
     "mango",
     "kiwifruit"
 ]
+
+# print(foods[0])
+# print(foods[2])
+# print(foods[-1])
+# print(foods[0:3])
+# print(foods[-3:11])
+# print(foods[6][-1])
