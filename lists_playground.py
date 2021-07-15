@@ -1,4 +1,4 @@
-# letters = ["a", "b", "c", "d", "e"]
+letters = ["a", "b", "c", "d", "e"]
 # # print(letters[3])
 # # print(letters[-1]) #-1 always returns the last value of the list
 # # print(letters[-2]) #-2 always returns the second last value of the list

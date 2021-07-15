@@ -8,17 +8,17 @@
 #     # count = count + 1 #stops infinite loop!
 #     count +=1 # it keeps adding 1 to the result #same as above
 
-# guess = ""
+guess = ""
 
-# while guess != "a":
-#     guess = input("Guess a letter: ")
+while guess != "a":
+    guess = input("Guess a letter: ")
 
 
-# counter = 10
+counter = 10
 
-# while counter <= 10:
-#     print(counter)
-#     counter = counter +1
+while counter <= 10:
+    print(counter)
+    counter = counter +1
 
 #CHALLENGE - ASK THE USER TO CONTINUALLY ENTER NAMES UNTIL A BLANK STRING IS ENTERED
 
