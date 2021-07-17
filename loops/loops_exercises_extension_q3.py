@@ -1,10 +1,7 @@
-number = input("Enter a number: ")
+number = int(input("Enter a number: "))
 
 row = "*"
-print(f"Pyramid size: {int(number)}")
-if number !=0:
-        for n in range(int(number)):
-            print(row)
-            row = row + "*"
-else:
-    print("")
+print(f"Pyramid size: {number}")
+for n in range(number):
+    print(row)
+    row += "*"
