@@ -23,3 +23,5 @@ for item in groceries:
     print(f"{item[0]}           ${item[1]*item[2]}")
     
 print(f"============================= \n                       ${total}")
+
+
