@@ -51,8 +51,8 @@ letters = ["a", "b", "c", "d", "e"]
 # print(letters)
 
 ### Inserts a new item in the index specified. Pushes everything forward. Values are not changed, a new item is added.
-# letters.insert(1, "z")
-# print(letters)
+letters.insert(1, "z")
+print(letters)
 
 ### Value in that position is removed.
 # letters.pop(2)
