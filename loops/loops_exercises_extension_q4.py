@@ -1,7 +1,7 @@
-number = int(input("Enter a number: "))
+number = int(input("Pyramid size: "))
 
 row = "*"
 
-print(f"Pyramid size: {number}")
 for n in range(number):
-    
+    print(f"{' ' * (number - (n+1))} {row}")
+    row += 2 *"*"
