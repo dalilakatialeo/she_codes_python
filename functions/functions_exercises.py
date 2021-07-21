@@ -22,7 +22,7 @@
 # print(odd_number(-1))
 
 
-######Q3 - Write a function that returns the mean of a list of number
+######Q3 - Write a function that returns the mean of a list of numbers
 
 # def list_mean(list):
 #     return sum(list) / len(list)
