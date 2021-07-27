@@ -1,0 +1,18 @@
+
+
+from datetime import datetime
+
+date_object = datetime.strptime(iso_string,'%A %d %B %Y')
+
+# def convert_f_to_c(temp_in_farenheit):
+#     """Converts an temperature from farenheit to celcius.
+
+#     Args:
+#         temp_in_farenheit: float representing a temperature.
+#     Returns:
+#         A float representing a temperature in degrees celcius, rounded to 1dp.
+#     """
+#     temp_in_celsius = ((temp_in_farenheit) - 32) * (5/9)
+#     return f"{temp_in_celsius:.1f}"
+
+# print(convert_f_to_c(21))

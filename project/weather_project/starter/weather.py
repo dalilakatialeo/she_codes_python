@@ -15,16 +15,20 @@ def format_temperature(temp):
     """
     return f"{temp}{DEGREE_SYBMOL}"
 
+# strptime for Parse = convert from text to object (datetime)
 
-def convert_date(iso_string):
-    """Converts and ISO formatted date into a human readable format.
+# strftime for Format = convert from object to text
 
-    Args:
-        iso_string: An ISO date string..
-    Returns:
-        A date formatted like: Weekday Date Month Year e.g. Tuesday 06 July 2021
-    """
-    pass
+# def convert_date(iso_string):
+#     """Converts and ISO formatted date into a human readable format.
+
+#     Args:
+#         iso_string: An ISO date string..
+#     Returns:
+#         A date formatted like: Weekday Date Month Year e.g. Tuesday 06 July 2021
+#     """
+#     date = datetime.fromisoformat(iso_string)
+#     return date ???
 
 
 def convert_f_to_c(temp_in_farenheit):
@@ -35,7 +39,8 @@ def convert_f_to_c(temp_in_farenheit):
     Returns:
         A float representing a temperature in degrees celcius, rounded to 1dp.
     """
-    pass
+    temp_in_celsius = (float(temp_in_farenheit) - 32) * (5/9)
+    return float(f"{temp_in_celsius:.1f}")
 
 
 def calculate_mean(weather_data):
@@ -46,7 +51,7 @@ def calculate_mean(weather_data):
     Returns:
         A float representing the mean value.
     """
-    pass
+    return sum(int(weather_data)) / len(weather_data)
 
 
 def load_data_from_csv(csv_file):
