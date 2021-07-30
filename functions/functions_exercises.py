@@ -24,13 +24,13 @@
 
 ######Q3 - Write a function that returns the mean of a list of numbers
 
-# def list_mean(list):
-#     return sum(list) / len(list)
-# print(list_mean([10,5,6]))
+def list_mean(list):
+    return sum(list) / len(list)
+print(list_mean([10,5,6]))
 
 
 #######Q4 - Write a function that takes two parameters: the unit price of an item and how many units were purchased. Return the total cost as a string.
 
-def purchase(price, qty):
-    return price * qty
-print(f"${purchase(1.49, 7):.2f}")
+# def purchase(price, qty):
+#     return price * qty
+# print(f"${purchase(1.49, 7):.2f}")
