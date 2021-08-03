@@ -119,8 +119,39 @@ def generate_summary(weather_data):
         weather_data: A list of lists, where each sublist represents a day of weather data.
     Returns:
         A string containing the summary information.
+        print(f"The lowest temperature will be {min_temp}, and will occur on {min_pos}")
     """
-    pass
+    min_list = []
+    max_list = []
+
+    if weather_data == []:
+        return ()
+    else:
+        for day in weather_data:
+            min_list.append(day[1])
+            max_list.append(day[2])
+    min_temp, min_pos= (find_min(min_list))
+    max_temp, max_pos= (find_max(max_list))
+
+    min_date = weather_data[min_pos][0]
+    max_date = weather_data[max_pos][0]   
+    min_conv_date = convert_date(min_date)
+    max_conv_date = convert_date(max_date)
+    min_celsius = convert_f_to_c(min_temp)
+    max_celsius = convert_f_to_c(max_temp)
+    avg_min = calculate_mean(min_list)
+    avg_max = calculate_mean(max_list)
+    avg_min_celsius = convert_f_to_c(avg_min)
+    avg_max_celsius = convert_f_to_c(avg_max)\
+    
+    summary = (f"{len(weather_data)} Day Overview\n")
+    summary += (f"  The lowest temperature will be {min_celsius}°C, and will occur on {min_conv_date}.\n")
+    summary += (f"  The highest temperature will be {max_celsius}°C, and will occur on {max_conv_date}.\n")
+    summary += (f"  The average low this week is {avg_min_celsius}°C.\n")
+    summary += (f"  The average high this week is {avg_max_celsius}°C.\n")
+
+    return summary
+
 
 def generate_daily_summary(weather_data):
     """Outputs a daily summary for the given weather data.
