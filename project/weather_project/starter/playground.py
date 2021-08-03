@@ -276,9 +276,6 @@ weather_data = [
 ]
 # print(weather_data)
 
-iso_date = weather_data[0][0]
-date = convert_date(iso_date)
-
 new_weather_data = []
 
 if weather_data == []:
@@ -292,7 +289,8 @@ else:
 new_weather_data.append(date)
 new_weather_data.append(daily_min)
 new_weather_data.append(daily_max)
-print(new_weather_data)  #only takes the last!
+### ????
+print(new_weather_data)  #only shows the last!
 
 # ['Friday 02 July 2021', 9.4, 19.4]
 # ['Saturday 03 July 2021', 13.9, 20.0]
