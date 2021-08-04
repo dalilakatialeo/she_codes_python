@@ -47,8 +47,8 @@ letters = ["a", "b", "c", "d", "e"]
 
 ### Add a group of new items (needs to be added as a list)
 
-# letters.extend(["g", "m"])
-# print(letters)
+letters.extend(["g", "m"])
+print(letters)
 
 ### Inserts a new item in the index specified. Pushes everything forward. Values are not changed, a new item is added.
 letters.insert(1, "z")

@@ -276,21 +276,26 @@ weather_data = [
 ]
 # print(weather_data)
 
-new_weather_data = []
+new_weather_data = [
+    ['Friday 02 July 2021', 9.4, 19.4],
+    ['Saturday 03 July 2021', 13.9, 20.0],
+    ['Sunday 04 July 2021', 13.3, 16.7],
+    ['Monday 05 July 2021', 12.8, 16.1],
+    ['Tuesday 06 July 2021', 11.7, 16.7],
+]
+
 
 if weather_data == []:
-    print ()
+    print () #print --> return
 else:
     for day in weather_data:
         date = convert_date(day[0])
         daily_min = convert_f_to_c(day[1])
         daily_max = convert_f_to_c(day[2])
-    
-new_weather_data.append(date)
-new_weather_data.append(daily_min)
-new_weather_data.append(daily_max)
-### ????
-print(new_weather_data)  #only shows the last!
+        # new_weather_data.extend([date, daily_min, daily_max])
+        new_weather_data.append([date, daily_min, daily_max])
+
+# print(new_weather_data)  #only shows the last!
 
 # ['Friday 02 July 2021', 9.4, 19.4]
 # ['Saturday 03 July 2021', 13.9, 20.0]
@@ -298,8 +303,17 @@ print(new_weather_data)  #only shows the last!
 # ['Monday 05 July 2021', 12.8, 16.1]
 # ['Tuesday 06 July 2021', 11.7, 16.7]
 
+# new_weather_data = [
+#     ['Friday 02 July 2021', 9.4, 19.4]
+#     ['Saturday 03 July 2021', 13.9, 20.0]
+#     ['Sunday 04 July 2021', 13.3, 16.7]
+#     ['Monday 05 July 2021', 12.8, 16.1]
+#     ['Tuesday 06 July 2021', 11.7, 16.7]
+# ]
 
 
-# print(f"---- {new_weather_data[0]} ----\n")    
-# print(f"  Minimum Temperature: {new_weather_data[1]}°C")
-# print(f"  Maximum Temperature: {new_weather_data[2]}°C")
+for row in new_weather_data:
+    print (f"---- {row[0]} ----")    
+    print(f"  Minimum Temperature: {row[1]}°C")
+    print(f"  Maximum Temperature: {row[2]}°C")
+    print(f"\n")
