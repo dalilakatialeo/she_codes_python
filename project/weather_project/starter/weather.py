@@ -171,11 +171,11 @@ def generate_daily_summary(weather_data):
             daily_max = convert_f_to_c(day[2])
             new_weather_data.append([date, daily_min, daily_max])
     # print(new_weather_data)
+    daily_summary = ""
     for row in new_weather_data:
-        daily_summary = (f"---- {row[0]} ----\n")
-        daily_summary += (f"  Minimum Temperature: {row[1]}°C\n")
-        daily_summary += (f"  Maximum Temperature: {row[2]}°C")
-        return daily_summary
+        summary = f"---- {row[0]} ----\n  Minimum Temperature: {row[1]}°C\n  Maximum Temperature: {row[2]}°C\n\n"
+        daily_summary += summary 
+    return daily_summary
         
 
 # for row in new_weather_data:
