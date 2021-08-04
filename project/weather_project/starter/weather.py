@@ -125,7 +125,7 @@ def generate_summary(weather_data):
     max_list = []
 
     if weather_data == []:
-        return ()
+        return ("")
     else:
         for day in weather_data:
             min_list.append(day[1])
@@ -163,7 +163,7 @@ def generate_daily_summary(weather_data):
     """
     new_weather_data = []
     if weather_data == []:
-        return ()
+        return ("")
     else:
         for day in weather_data:
             date = convert_date(day[0])
